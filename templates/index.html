@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="color:blue">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Predictive analysis</h2>
+            <h3>Work Year</h3>
+            <input id="first" name="work_year" type="number ">
+            <h3>What is your Pay grade?</h3><br><input id="second" name="pay_grade" required="required">
+            <h3>What is your company_country_pay_scale?</h3><br><input id="third" name="company_country_pay_scale" required="required">
+            <h3>What is your job_pay_scale?</h3><br><input id="fourth" name="job_pay_scale" required="required">
+            <h3>What Is your experience level?</h3><br><select name="experience_level" id="fuel" required="required">
+                <option value="EN">EN</option>
+                <option value="EX">EX</option>
+                <option value="MI">MI</option>
+                <option value="SE">SE</option>
+
+            </select>
+             <h3>What Is your employment type?</h3><br><select name="employment_type" id="fuel" required="required">
+                <option value="CT">CT</option>
+                <option value="FL">FL</option>
+                <option value="FT">FT</option>
+                <option value="PT">PT</option>
+
+            </select>
+            <h3>What Is your remote ratio?</h3><br><select name="remote_ratio" id="fuel" required="required">
+                <option value="Fully Remote">Fully Remote</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="On-prem">On-prem</option>
+            </select>
+            <h3>What Is your comany size?</h3><br><select name="company_size" id="fuel" required="required">
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="S">S</option>
+            </select>
+            
+            <br><br><button id="sub" type="submit ">Predict Salary</button>
+            <br>
+
+
+
+
+        </form>
+
+
+
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+
+
+
+
+    <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #research {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+        
+        #fuel {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+        
+        #fuel:hover {
+            background-color: coral;
+        }
+        
+        #research {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #research:hover {
+            background-color: coral;
+        }
+        
+        #resea {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #resea:hover {
+            background-color: coral;
+        }
+        
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>

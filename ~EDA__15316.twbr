@@ -1,0 +1,702 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0712.0324                               -->
+<workbook original-version='18.1' source-build='2022.1.4 (20221.22.0712.0324)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='ds_salaries' inline='true' name='federated.17agjib094ux4o14g6bwz0otys50' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ds_salaries' name='textscan.1hpqzop1quj9vr17ika280p7i4ev'>
+            <connection class='textscan' directory='C:/Users/HP/Desktop/Kaggle_Challenges/Data_Scientist_Salaries' filename='ds_salaries.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1hpqzop1quj9vr17ika280p7i4ev' name='ds_salaries.csv' table='[ds_salaries#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' date-parse-format='yyyy' name='work_year' ordinal='1' />
+            <column datatype='string' name='experience_level' ordinal='2' />
+            <column datatype='string' name='employment_type' ordinal='3' />
+            <column datatype='string' name='job_title' ordinal='4' />
+            <column datatype='integer' name='salary' ordinal='5' />
+            <column datatype='string' name='salary_currency' ordinal='6' />
+            <column datatype='integer' name='salary_in_usd' ordinal='7' />
+            <column datatype='string' name='employee_residence' ordinal='8' />
+            <column datatype='integer' name='remote_ratio' ordinal='9' />
+            <column datatype='string' name='company_location' ordinal='10' />
+            <column datatype='string' name='company_size' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1hpqzop1quj9vr17ika280p7i4ev' name='ds_salaries.csv' table='[ds_salaries#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' date-parse-format='yyyy' name='work_year' ordinal='1' />
+            <column datatype='string' name='experience_level' ordinal='2' />
+            <column datatype='string' name='employment_type' ordinal='3' />
+            <column datatype='string' name='job_title' ordinal='4' />
+            <column datatype='integer' name='salary' ordinal='5' />
+            <column datatype='string' name='salary_currency' ordinal='6' />
+            <column datatype='integer' name='salary_in_usd' ordinal='7' />
+            <column datatype='string' name='employee_residence' ordinal='8' />
+            <column datatype='integer' name='remote_ratio' ordinal='9' />
+            <column datatype='string' name='company_location' ordinal='10' />
+            <column datatype='string' name='company_size' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ds_salaries.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[ds_salaries.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>work_year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[work_year]</local-name>
+            <parent-name>[ds_salaries.csv]</parent-name>
+            <remote-alias>work_year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>experience_level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[experience_level]</local-name>
+            <parent-name>[ds_salaries.csv]</parent-name>
+            <remote-alias>experience_level</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employment_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[employment_type]</local-name>
+            <parent-name>[ds_salaries.csv]</parent-name>
+            <remote-alias>employment_type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job_title]</local-name>
+            <parent-name>[ds_salaries.csv]</parent-name>
+            <remote-alias>job_title</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[salary]</local-name>
+            <parent-name>[ds_salaries.csv]</parent-name>
+            <remote-alias>salary</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salary_currency</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[salary_currency]</local-name>
+            <parent-name>[ds_salaries.csv]</parent-name>
+            <remote-alias>salary_currency</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salary_in_usd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[salary_in_usd]</local-name>
+            <parent-name>[ds_salaries.csv]</parent-name>
+            <remote-alias>salary_in_usd</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employee_residence</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[employee_residence]</local-name>
+            <parent-name>[ds_salaries.csv]</parent-name>
+            <remote-alias>employee_residence</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>remote_ratio</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[remote_ratio]</local-name>
+            <parent-name>[ds_salaries.csv]</parent-name>
+            <remote-alias>remote_ratio</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company_location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company_location]</local-name>
+            <parent-name>[ds_salaries.csv]</parent-name>
+            <remote-alias>company_location</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company_size</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company_size]</local-name>
+            <parent-name>[ds_salaries.csv]</parent-name>
+            <remote-alias>company_size</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='ds_salaries.csv' datatype='table' name='[__tableau_internal_object_id__].[ds_salaries.csv_9A921E6AEE3B46BBA7991993748AA486]' role='measure' type='quantitative' />
+      <column caption='Company Location' datatype='string' name='[company_location]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Company Size' datatype='string' name='[company_size]' role='dimension' type='nominal' />
+      <column caption='Employee Residence' datatype='string' name='[employee_residence]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Employment Type' datatype='string' name='[employment_type]' role='dimension' type='nominal' />
+      <column caption='Experience Level' datatype='string' name='[experience_level]' role='dimension' type='nominal' />
+      <column caption='Job Title' datatype='string' name='[job_title]' role='dimension' type='nominal' />
+      <column caption='Remote Ratio' datatype='integer' name='[remote_ratio]' role='measure' type='quantitative' />
+      <column caption='Salary' datatype='integer' name='[salary]' role='measure' type='quantitative' />
+      <column caption='Salary Currency' datatype='string' name='[salary_currency]' role='dimension' type='nominal' />
+      <column caption='Salary In Usd' datatype='integer' name='[salary_in_usd]' role='measure' type='quantitative' />
+      <column caption='Work Year' datatype='date' name='[work_year]' role='dimension' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='ds_salaries.csv' id='ds_salaries.csv_9A921E6AEE3B46BBA7991993748AA486'>
+            <properties context=''>
+              <relation connection='textscan.1hpqzop1quj9vr17ika280p7i4ev' name='ds_salaries.csv' table='[ds_salaries#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='date' date-parse-format='yyyy' name='work_year' ordinal='1' />
+                  <column datatype='string' name='experience_level' ordinal='2' />
+                  <column datatype='string' name='employment_type' ordinal='3' />
+                  <column datatype='string' name='job_title' ordinal='4' />
+                  <column datatype='integer' name='salary' ordinal='5' />
+                  <column datatype='string' name='salary_currency' ordinal='6' />
+                  <column datatype='integer' name='salary_in_usd' ordinal='7' />
+                  <column datatype='string' name='employee_residence' ordinal='8' />
+                  <column datatype='integer' name='remote_ratio' ordinal='9' />
+                  <column datatype='string' name='company_location' ordinal='10' />
+                  <column datatype='string' name='company_size' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='High number of Jobs'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ds_salaries' name='federated.17agjib094ux4o14g6bwz0otys50' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.17agjib094ux4o14g6bwz0otys50'>
+            <column-instance column='[job_title]' derivation='Count' name='[cnt:job_title:qk]' pivot='key' type='quantitative' />
+            <column caption='Company Location' datatype='string' name='[company_location]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Company Size' datatype='string' name='[company_size]' role='dimension' type='nominal' />
+            <column caption='Job Title' datatype='string' name='[job_title]' role='dimension' type='nominal' />
+            <column-instance column='[company_location]' derivation='None' name='[none:company_location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[company_size]' derivation='None' name='[none:company_size:nk]' pivot='key' type='nominal' />
+            <column caption='Work Year' datatype='date' name='[work_year]' role='dimension' type='quantitative' />
+            <column-instance column='[work_year]' derivation='Year' name='[yr:work_year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17agjib094ux4o14g6bwz0otys50].[none:company_size:nk]'>
+            <groupfilter from='&quot;L&quot;' function='range' level='[none:company_size:nk]' to='&quot;S&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.17agjib094ux4o14g6bwz0otys50].[yr:work_year:ok]'>
+            <groupfilter function='level-members' level='[yr:work_year:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.17agjib094ux4o14g6bwz0otys50].[yr:work_year:ok]</column>
+            <column>[federated.17agjib094ux4o14g6bwz0otys50].[none:company_size:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.17agjib094ux4o14g6bwz0otys50].[cnt:job_title:qk]' />
+              <lod column='[federated.17agjib094ux4o14g6bwz0otys50].[none:company_location:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.17agjib094ux4o14g6bwz0otys50].[Latitude (generated)]</rows>
+        <cols>[federated.17agjib094ux4o14g6bwz0otys50].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{1B6498B4-D09C-4CA8-8901-F4E977E236EB}' />
+    </worksheet>
+    <worksheet name='Highest Paying country by median salary in usd'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ds_salaries' name='federated.17agjib094ux4o14g6bwz0otys50' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.17agjib094ux4o14g6bwz0otys50'>
+            <column caption='Company Location' datatype='string' name='[company_location]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Company Size' datatype='string' name='[company_size]' role='dimension' type='nominal' />
+            <column-instance column='[salary_in_usd]' derivation='Median' name='[med:salary_in_usd:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[company_location]' derivation='None' name='[none:company_location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[company_size]' derivation='None' name='[none:company_size:nk]' pivot='key' type='nominal' />
+            <column caption='Salary In Usd' datatype='integer' name='[salary_in_usd]' role='measure' type='quantitative' />
+            <column caption='Work Year' datatype='date' name='[work_year]' role='dimension' type='quantitative' />
+            <column-instance column='[work_year]' derivation='Year' name='[yr:work_year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17agjib094ux4o14g6bwz0otys50].[none:company_size:nk]'>
+            <groupfilter function='level-members' level='[none:company_size:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.17agjib094ux4o14g6bwz0otys50].[yr:work_year:ok]'>
+            <groupfilter function='level-members' level='[yr:work_year:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.17agjib094ux4o14g6bwz0otys50].[yr:work_year:ok]</column>
+            <column>[federated.17agjib094ux4o14g6bwz0otys50].[none:company_size:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17agjib094ux4o14g6bwz0otys50].[med:salary_in_usd:qk]' />
+              <lod column='[federated.17agjib094ux4o14g6bwz0otys50].[none:company_location:nk]' />
+              <color column='[federated.17agjib094ux4o14g6bwz0otys50].[med:salary_in_usd:qk]' />
+              <geometry column='[federated.17agjib094ux4o14g6bwz0otys50].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17agjib094ux4o14g6bwz0otys50].[Latitude (generated)]</rows>
+        <cols>[federated.17agjib094ux4o14g6bwz0otys50].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{884F268A-5B13-4314-8B14-2E68EB467DC8}' />
+    </worksheet>
+    <worksheet name='Median salary vs experience'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ds_salaries' name='federated.17agjib094ux4o14g6bwz0otys50' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17agjib094ux4o14g6bwz0otys50'>
+            <column caption='Company Size' datatype='string' name='[company_size]' role='dimension' type='nominal' />
+            <column caption='Experience Level' datatype='string' name='[experience_level]' role='dimension' type='nominal' />
+            <column-instance column='[salary_in_usd]' derivation='Median' name='[med:salary_in_usd:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[company_size]' derivation='None' name='[none:company_size:nk]' pivot='key' type='nominal' />
+            <column-instance column='[experience_level]' derivation='None' name='[none:experience_level:nk]' pivot='key' type='nominal' />
+            <column caption='Salary In Usd' datatype='integer' name='[salary_in_usd]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.17agjib094ux4o14g6bwz0otys50].[none:experience_level:nk]' direction='DESC' measure-to-sort-by='[federated.17agjib094ux4o14g6bwz0otys50].[med:salary_in_usd:qk]' shelf='columns' />
+            <shelf-sort-v2 dimension-to-sort='[federated.17agjib094ux4o14g6bwz0otys50].[none:company_size:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.17agjib094ux4o14g6bwz0otys50].[med:salary_in_usd:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.17agjib094ux4o14g6bwz0otys50].[none:experience_level:nk]' value='183' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17agjib094ux4o14g6bwz0otys50].[med:salary_in_usd:qk]</rows>
+        <cols>([federated.17agjib094ux4o14g6bwz0otys50].[none:experience_level:nk] / [federated.17agjib094ux4o14g6bwz0otys50].[none:company_size:nk])</cols>
+      </table>
+      <simple-id uuid='{0F546D21-CD59-4D5D-B35D-E8C12266E734}' />
+    </worksheet>
+    <worksheet name='Percentage of countries as a percentage of salaries'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ds_salaries' name='federated.17agjib094ux4o14g6bwz0otys50' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17agjib094ux4o14g6bwz0otys50'>
+            <column caption='Company Location' datatype='string' name='[company_location]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[company_location]' derivation='None' name='[none:company_location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[salary_in_usd]' derivation='Sum' name='[pcto:sum:salary_in_usd:qk:6]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.17agjib094ux4o14g6bwz0otys50].[company_location]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[salary_in_usd]' derivation='Sum' name='[pcto:sum:salary_in_usd:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Salary In Usd' datatype='integer' name='[salary_in_usd]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.17agjib094ux4o14g6bwz0otys50].[none:company_location:nk]' />
+              <wedge-size column='[federated.17agjib094ux4o14g6bwz0otys50].[pcto:sum:salary_in_usd:qk:6]' />
+              <size column='[federated.17agjib094ux4o14g6bwz0otys50].[pcto:sum:salary_in_usd:qk]' />
+              <text column='[federated.17agjib094ux4o14g6bwz0otys50].[pcto:sum:salary_in_usd:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7F946A86-7293-4F16-93AB-580A84D46877}' />
+    </worksheet>
+    <worksheet name='Where are most employees located'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ds_salaries' name='federated.17agjib094ux4o14g6bwz0otys50' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.17agjib094ux4o14g6bwz0otys50'>
+            <column-instance column='[job_title]' derivation='Count' name='[cnt:job_title:qk]' pivot='key' type='quantitative' />
+            <column caption='Company Size' datatype='string' name='[company_size]' role='dimension' type='nominal' />
+            <column caption='Employee Residence' datatype='string' name='[employee_residence]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Job Title' datatype='string' name='[job_title]' role='dimension' type='nominal' />
+            <column-instance column='[company_size]' derivation='None' name='[none:company_size:nk]' pivot='key' type='nominal' />
+            <column-instance column='[employee_residence]' derivation='None' name='[none:employee_residence:nk]' pivot='key' type='nominal' />
+            <column caption='Work Year' datatype='date' name='[work_year]' role='dimension' type='quantitative' />
+            <column-instance column='[work_year]' derivation='Year' name='[yr:work_year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17agjib094ux4o14g6bwz0otys50].[none:company_size:nk]'>
+            <groupfilter function='level-members' level='[none:company_size:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.17agjib094ux4o14g6bwz0otys50].[yr:work_year:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:work_year:ok]' member='2020' />
+              <groupfilter function='member' level='[yr:work_year:ok]' member='2021' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17agjib094ux4o14g6bwz0otys50].[none:company_size:nk]</column>
+            <column>[federated.17agjib094ux4o14g6bwz0otys50].[yr:work_year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.17agjib094ux4o14g6bwz0otys50].[Longitude (generated)]' field-type='quantitative' max='27168824.166140705' min='-12906192.51943779' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.17agjib094ux4o14g6bwz0otys50].[Latitude (generated)]' field-type='quantitative' max='13954700.920121752' min='-9756349.5041388534' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17agjib094ux4o14g6bwz0otys50].[cnt:job_title:qk]' />
+              <lod column='[federated.17agjib094ux4o14g6bwz0otys50].[none:employee_residence:nk]' />
+              <color column='[federated.17agjib094ux4o14g6bwz0otys50].[cnt:job_title:qk]' />
+              <geometry column='[federated.17agjib094ux4o14g6bwz0otys50].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17agjib094ux4o14g6bwz0otys50].[Latitude (generated)]</rows>
+        <cols>[federated.17agjib094ux4o14g6bwz0otys50].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{81474AE1-F634-4380-97C6-395A8FA2BC62}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Median salary vs experience'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B1AD0479-E00E-450D-9553-1A6BA69B8090}' />
+    </window>
+    <window class='worksheet' name='High number of Jobs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.17agjib094ux4o14g6bwz0otys50].[none:company_size:nk]' type='filter' />
+            <card param='[federated.17agjib094ux4o14g6bwz0otys50].[yr:work_year:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.17agjib094ux4o14g6bwz0otys50].[cnt:job_title:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DFB8BB93-4F67-4407-8A8C-1C15EA1BFCC1}' />
+    </window>
+    <window class='worksheet' name='Highest Paying country by median salary in usd'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.17agjib094ux4o14g6bwz0otys50].[none:company_size:nk]' type='filter' />
+            <card param='[federated.17agjib094ux4o14g6bwz0otys50].[yr:work_year:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.17agjib094ux4o14g6bwz0otys50].[med:salary_in_usd:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4B25A52F-D271-4835-BA72-7688C6259926}' />
+    </window>
+    <window class='worksheet' name='Where are most employees located'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.17agjib094ux4o14g6bwz0otys50].[yr:work_year:ok]' type='filter' />
+            <card param='[federated.17agjib094ux4o14g6bwz0otys50].[none:company_size:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.17agjib094ux4o14g6bwz0otys50].[cnt:job_title:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E974AF1F-268E-4752-9125-F3B96FE1D6F7}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Percentage of countries as a percentage of salaries'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.17agjib094ux4o14g6bwz0otys50].[pcto:sum:salary_in_usd:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{718EA958-1183-4222-A174-9B7D5BD2F92F}' />
+    </window>
+  </windows>
+</workbook>
