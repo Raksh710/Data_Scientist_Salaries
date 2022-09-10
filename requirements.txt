@@ -4,7 +4,6 @@ appdirs==1.4.4
 astunparse==1.6.3
 async-generator==1.10
 atomicwrites==1.4.0
-autoscraper==1.1.12
 backoff==1.10.0
 backports.weakref==1.0.post1
 bkcharts==0.2
@@ -12,22 +11,13 @@ black==19.10b0
 blis==0.7.7
 Brotli==1.0.9
 brotlipy==0.7.0
-bs4==0.0.1
 catalogue==2.0.7
-catboost==1.0.6
 certifi==2022.5.18.1
 comtypes==1.1.10
 constantly==15.1.0
 cssselect==1.1.0
 cymem==2.0.6
 cytoolz==0.11.0
-dash==2.4.1
-dash-bootstrap-components==1.1.0
-dash-colorscales==0.0.4
-dash-core-components==2.0.0
-dash-daq==0.5.0
-dash-html-components==2.0.0
-dash-table==5.0.0
 et-xmlfile==1.1.0
 Flask-Compress==1.12
 flask-ngrok==0.0.25
@@ -39,11 +29,8 @@ google-pasta==0.2.0
 graphviz==0.20
 h11==0.13.0
 kaleido==0.2.1
-keras==2.9.0
-Keras-Preprocessing==1.1.2
 langcodes==3.3.0
 libclang==14.0.1
-lightgbm==3.3.2
 llvmlite==0.38.0
 lz4==4.0.1
 mccabe==0.6.1
@@ -55,7 +42,6 @@ murmurhash==1.0.7
 mypy-extensions==0.4.3
 opt-einsum==3.3.0
 outcome==1.1.0
-pandas-datareader==0.10.0
 pathspec==0.7.0
 pathy==0.6.1
 patsy==0.5.2
@@ -74,7 +60,6 @@ PyYAML==6.0
 queuelib==1.5.0
 squarify==0.4.3
 srsly==2.4.3
-statsmodels==0.13.2
 termcolor==1.1.0
 thinc==8.0.16
 trio==0.20.0
@@ -85,5 +70,4 @@ webencodings==0.5.1
 win-unicode-console==0.5
 wincertstore==0.2
 wsproto==1.1.0
-xgboost==1.6.1
 zict==2.0.0
