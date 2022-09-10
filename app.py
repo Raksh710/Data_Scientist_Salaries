@@ -15,14 +15,12 @@ def Home():
 standard_to = StandardScaler()
 @app.route("/predict", methods=['POST'])
 def predict():
-   # Fuel_Type_Diesel=0
     if request.method == 'POST':
         work_year = int(request.form['work_year'])
         pay_grade=float(request.form['pay_grade'])
         company_country_pay_scale=int(request.form['company_country_pay_scale'])
         job_pay_scale = int(request.form['job_pay_scale'])
         experience_level = request.form['experience_level']
-        #experience_level = request.form['employment_type']
         if (experience_level == "EN"):
             experience_level_EN = 1
             experience_level_EX = 0
@@ -97,7 +95,6 @@ def predict():
         pred = model.predict([[work_year, pay_grade, company_country_pay_scale, job_pay_scale,experience_level_EN, experience_level_EX, experience_level_MI,experience_level_SE, employment_type_CT, employment_type_FL,employment_type_FT, employment_type_PT,remote_ratio_Full_Remote,remote_ratio_Hybrid, remote_ratio_On_prem, 
                                company_size_L,company_size_M, company_size_S]])
         
-        #prediction=model.predict([[Present_Price,Kms_Driven2,Owner,Year,Fuel_Type_Diesel,Fuel_Type_Petrol,Seller_Type_Individual,Transmission_Mannual]])
         output=round(pred[0],2)
         if output<0:
             return render_template('index.html',prediction_texts="Sorry you cannot get employed")
