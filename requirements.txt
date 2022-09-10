@@ -72,11 +72,6 @@ pyreadline==2.1
 pytest==7.1.1
 PyYAML==6.0
 queuelib==1.5.0
-selenium==4.2.0
-sip==4.19.13
-spacy==3.3.0
-spacy-legacy==3.0.9
-spacy-loggers==1.0.2
 squarify==0.4.3
 srsly==2.4.3
 statsmodels==0.13.2
