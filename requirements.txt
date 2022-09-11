@@ -73,7 +73,6 @@ wsproto==1.1.0
 zict==2.0.0
 numpy==1.19.0
 requests==2.24.0
-scikit-learn==0.23.1
 scipy==1.5.0
 sklearn==0.0
 threadpoolctl==2.1.0
