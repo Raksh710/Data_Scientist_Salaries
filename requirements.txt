@@ -2,6 +2,9 @@ absl-py==1.0.0
 analytics-python==1.4.0
 appdirs==1.4.4
 jsonify==0.5
+scikit-learn==0.23.1
+scipy==1.5.0
+sklearn==0.0
 astunparse==1.6.3
 gunicorn==19.9.0
 async-generator==1.10
