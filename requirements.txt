@@ -1,13 +1,7 @@
 absl-py==1.0.0
 analytics-python==1.4.0
 appdirs==1.4.4
-jsonify==0.5
-scikit-learn==0.23.1
-scipy==1.5.0
-sklearn==0.0
 astunparse==1.6.3
-numpy==1.19.0
-gunicorn==19.9.0
 async-generator==1.10
 atomicwrites==1.4.0
 backoff==1.10.0
@@ -77,3 +71,13 @@ win-unicode-console==0.5
 wincertstore==0.2
 wsproto==1.1.0
 zict==2.0.0
+numpy==1.19.0
+requests==2.24.0
+scikit-learn==0.23.1
+scipy==1.5.0
+sklearn==0.0
+threadpoolctl==2.1.0
+urllib3==1.25.9
+Werkzeug==1.0.1
+wincertstore==0.2
+gunicorn
