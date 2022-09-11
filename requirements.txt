@@ -2,6 +2,7 @@ absl-py==1.0.0
 analytics-python==1.4.0
 appdirs==1.4.4
 astunparse==1.6.3
+gunicorn==19.9.0
 async-generator==1.10
 atomicwrites==1.4.0
 backoff==1.10.0
